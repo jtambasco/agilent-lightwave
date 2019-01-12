@@ -1,4 +1,4 @@
-# agilent-lightwave
+# agilentlightwave
 Python GPIB driver for the Agilent Lightwave 8164A/B.
 
 Works with power meter modules and tunable laser modules.
@@ -13,7 +13,7 @@ in Python 3,
 
 then
 ```
-pip3 install agilent-lightwave
+pip3 install agilentlightwave
 ```
 ## Usage
 ```python

@@ -1,9 +1,9 @@
 from setuptools import setup
 
-setup(name='agilent-lightwave',
+setup(name='agilentlightwave',
       version='0.2',
       description='Python driver for the Agilent Lightwave 8164A/B.',
-      url='https://github.com/jtambasco/agilent-lightwave',
+      url='https://github.com/jtambasco/agilentlightwave',
       author='Jean-Luc Tambasco',
       author_email='an.obscurity@gmail.com',
       license='MIT',
@@ -12,6 +12,6 @@ setup(name='agilent-lightwave',
           'scipy',
           'numpy'
       ],
-      packages=['agilent-lightwave'],
+      packages=['agilentlightwave'],
       include_package_data=True,
       zip_safe=False)
