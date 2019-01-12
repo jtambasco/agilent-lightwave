@@ -1,7 +1,8 @@
-import gpib
-import serial as ser
+import sys
+if 'sphinx' not in sys.modules:
+    import gpib
 
-class AgilentLightWaveConnection():
+class AgilentLightwaveConnection():
     def __init__(self, gpib_num, gpib_dev_num):
         self._dev = gpib.dev(gpib_num, gpib_dev_num)
 

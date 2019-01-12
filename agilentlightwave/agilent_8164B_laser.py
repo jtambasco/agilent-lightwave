@@ -1,15 +1,13 @@
-from . import laser as las
-from .agilent_lightwave_connection import AgilentLightWaveConnection
-from ..utils import gnuplot as gp
+from . import _laser as las
+from ._agilent_lightwave_connection import AgilentLightwaveConnection
 import time
 import struct
 import numpy as np
 from scipy import interpolate
 import os
-import serial as ser
 import warnings
 
-class LaserAgilent8164B(AgilentLightWaveConnection, las.LaserTunable):
+class LaserAgilent8164B(AgilentLightwaveConnection, las.LaserTunable):
     '''
     Controls the laser module in the Agilent 8164B.
 
@@ -290,8 +288,6 @@ class LaserAgilent8164B(AgilentLightWaveConnection, las.LaserTunable):
             with open(filename, 'w') as fs:
                 for w, p in zip(wavelengths, powers):
                     fs.write('%e,%e\n' % (w, p))
-            script_dir = os.path.dirname(os.path.abspath(__file__))
-            gp.Gnuplot(script_dir+'/agilent_laser_sweep.gpi', {'filename':filename})
         except TypeError:
             pass
 

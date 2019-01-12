@@ -1,9 +1,6 @@
-API
-===
 
-************************
-Agilent lightwave system
-************************
+Lightwave System
+================
 
 .. automodapi:: agilentlightwave.agilent_lightwave
 
@@ -14,12 +11,16 @@ Agilent lightwave system
 Laser
 *****
 
-.. automodapi:: agilentlightwave.laser
+.. automodapi:: agilentlightwave.agilent_8164B_laser
 
     :inherited-members:
     :no-heading:
 
-.. automodapi:: agilentlightwave.agilent_8164B_laser
+***********
+Power meter
+***********
+
+.. automodapi:: agilentlightwave.agilent_8164B_power_meter
 
     :inherited-members:
     :no-heading:

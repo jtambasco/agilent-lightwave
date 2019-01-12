@@ -1,7 +1,7 @@
-from . import power_meter as pm
-from .agilent_lightwave_connection import AgilentLightWaveConnection
+from . import _power_meter as pm
+from ._agilent_lightwave_connection import AgilentLightwaveConnection
 
-class PowerMeterAgilent8164B(AgilentLightWaveConnection, pm.PowerMeter):
+class PowerMeterAgilent8164B(AgilentLightwaveConnection, pm.PowerMeter):
     '''
     Driver for the Agilent 8164B power meter module that
     can read power and set the wavelength as well as
@@ -114,7 +114,7 @@ class PowerMeterAgilent8164B(AgilentLightWaveConnection, pm.PowerMeter):
         r = self.get_auto_range()
         return r
 
-    def set_range_dbm(self, range_dBm):
+    def set_range_dbm(self, range_dbm):
         self._write('sens' + str(self._sensor_num) + ':pow:rang %.2fdbm' % range_dbm)
         r = self.get_range_dbm()
         return r
