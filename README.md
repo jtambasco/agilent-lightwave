@@ -1,7 +1,12 @@
 # agilentlightwave
+
+**STILL UNDER DEVELOPMENT.  PORTING DRIVER FROM MY OTHER LIBRARY, SO STILL SOME BUGS...**
+
 Python GPIB driver for the Agilent Lightwave 8164A/B.
 
 Works with power meter modules and tunable laser modules.
+
+Documentation [here](https://agilentlightwave.readthedocs.io/en/latest/).
 
 ## Installation
 First install `Linux GPIB` from https://linux-gpib.sourceforge.io/.

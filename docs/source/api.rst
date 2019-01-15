@@ -1,6 +1,10 @@
 
-Lightwave System
-================
+Driver
+======
+
+****************
+Lightwave system
+****************
 
 .. automodapi:: agilentlightwave.agilent_lightwave
 
